@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_mate/routes/routes.dart';
 
 class StudentProfile extends StatelessWidget {
   const StudentProfile({Key? key}) : super(key: key);
@@ -10,7 +11,9 @@ class StudentProfile extends StatelessWidget {
         title: Text("Profile Page"),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         centerTitle: true,
       ),
@@ -39,6 +42,12 @@ class StudentProfile extends StatelessWidget {
               tileColor: Colors.cyan,
               title: Text("Your Goals"),
               leading: Icon(Icons.format_align_center),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, MyRoutes.communityRoute);
+              },
+              child: Text("Community"),
             )
           ],
         ),
