@@ -9,7 +9,6 @@ class HomeCommunity extends StatefulWidget {
 }
 
 class _HomeCommunityState extends State<HomeCommunity> {
-  @override
   final avatarSrc = "https://i.redd.it/h0aubq87qxwb1.jpg";
   Widget build(BuildContext context) {
     return Scaffold(
