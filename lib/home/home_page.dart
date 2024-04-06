@@ -2,21 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(HomePage());
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Drawer Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
-    );
-  }
-}
 
 class HomePage extends StatelessWidget {
   @override
@@ -25,6 +13,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Heyy Student !'),
+        backgroundColor: Colors.cyan,
       ),
       drawer: Drawer(
         child: ListView(
